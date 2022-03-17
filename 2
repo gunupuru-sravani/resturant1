@@ -1,0 +1,32 @@
+SQL> select *from resturantt where custname like '%s';
+
+no rows selected
+
+SQL> select *from resturantt where custname like 's%';
+
+ BILLIDNUM CUSTNAME         PHNO     AMOUNT
+---------- ---------- ---------- ----------
+   1000002 sri              7587        589
+   1000003 sreevani         7742        879
+   1000006 srivali          8741        789
+   1000007 sree             6897        251
+
+SQL> select custname,phno,amount
+  2  from resturantt
+  3  order by custname,phno,amount
+  4  asc;
+
+CUSTNAME         PHNO     AMOUNT
+---------- ---------- ----------
+amrutha          8541        874
+anusha           7412        257
+charan          76985        584
+divya            7894        352
+harini           7478        784
+karan            9541        547
+sree             6897        251
+sreevani         7742        879
+sri              7587        589
+srivali          8741        789
+
+10 rows selected.
